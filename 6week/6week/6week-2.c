@@ -7,7 +7,7 @@ int main() {
     for (int i = 0; i < 3; i++)
     {
         scanf_s("%d", &score[i]);  //국어 영어 수학 점수 받기 
-        avg += score[i];        //국어 영어 수학 점수 다더하기
+        avg += score[i];        //국어 영어 수학 점수 다 더하기
     }
     avg = avg / 3; //국영수 평균 
     printf("당신의 평균: %d\n", avg);
