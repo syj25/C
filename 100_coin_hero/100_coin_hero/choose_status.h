@@ -1,4 +1,4 @@
-
+ï»¿
 #include<stdio.h>
 #include<stdlib.h>
 #define _CRT_SECURE_NO_WARNINGS
@@ -6,15 +6,15 @@
 void choose_status()
 {
 	int num;
-	printf("Ä³¸¯ÅÍ¸¦ ¼±ÅÃÇÏ¼¼¿ä.\n 1. °Ë»ç\n");//ÀÌÈÄ Ãß°¡ ¿¹Á¤
+	printf("ìºë¦­í„°ë¥¼ ì„ íƒí•˜ì„¸ìš”.\n 1. ê²€ì‚¬\n");//ì´í›„ ì¶”ê°€ ì˜ˆì •
 	scanf("%d", &num);
 	if (num == 1)
 	{
-		FILE* fp = fopen("hero_status.txt", "w"); //¿ë»ç status ÆÄÀÏÀ» ¾²±â
+		FILE* fp = fopen("hero_status.txt", "w"); //ìš©ì‚¬ status íŒŒì¼ì„ ì“°ê¸°
 
-		int hero_status[MAX] = { 20,2,10,5 }; //°Ë»ç status 
+		int hero_status[MAX] = { 20,2,10,5 }; //ê²€ì‚¬ status 
 		for (int i = 0; i < MAX; i++)
-			fprintf(fp, "%d\n", hero_status[i]); //0.Ã¼·Â 1.°ø°İ·Â 2.¸¶³ª 3.°ñµå·® 4.... 9.
+			fprintf(fp, "%d\n", hero_status[i]); //0.ì²´ë ¥ 1.ê³µê²©ë ¥ 2.ë§ˆë‚˜ 3.ê³¨ë“œëŸ‰ 4.... 9.
 
 
 
@@ -23,14 +23,14 @@ void choose_status()
 
 
 
-	FILE* fp = fopen("hero_status.txt", "r");  //¿ë»ç status ÆÄÀÏÀ» ÀĞ±â
+	FILE* fp = fopen("hero_status.txt", "r");  //ìš©ì‚¬ status íŒŒì¼ì„ ì½ê¸°
 
 	int buffer[MAX] = { 0, };
 
 	int i;
 
 
-	for (i = 0; i < MAX; i++) // ¹è¿­ÀÇ Å©±â¸¸Å­ °ªÀ» ÀÔ·Â ¹ŞÀ½
+	for (i = 0; i < MAX; i++) // ë°°ì—´ì˜ í¬ê¸°ë§Œí¼ ê°’ì„ ì…ë ¥ ë°›ìŒ
 
 	{
 
@@ -39,11 +39,11 @@ void choose_status()
 	}
 
 
-	fclose(fp); // ÀÔ·ÂÀ» ¹ŞÀºµÚ¿¡ ÆÄÀÏ´İ±â
+	fclose(fp); // ì…ë ¥ì„ ë°›ì€ë’¤ì— íŒŒì¼ë‹«ê¸°
 
 
 
-	for (i = 0; i < 10; i++) // ÀÔ·Â¹ŞÀº ¹è¿­À» Ãâ·Â
+	for (i = 0; i < 10; i++) // ì…ë ¥ë°›ì€ ë°°ì—´ì„ ì¶œë ¥
 
 	{
 
